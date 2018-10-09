@@ -89,5 +89,6 @@ lab_test = rgb_to_lab([100, 100, 100])
 rgb_test = lab_to_rgb(lab_test)
 
 # Expected that d2 is smaller than d1
-print(d1, d2)
+print('d1: {}, d2: {}'.format(d1, d2))
+# Should yield more or less [100, 100, 100]
 print(rgb_test.round().astype(np.uint8))
